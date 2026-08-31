@@ -1,83 +1,129 @@
-# 🍽️ **Restaurant POS System**  
+# 🍽️ Restaurant POS System
 
-A full-featured **Restaurant POS System** built using the **MERN Stack** to streamline restaurant operations, enhance customer experience, and manage orders, payments, and inventory with ease.
-
-## ✨ **Features**
-
-- 🍽️ **Order Management**  
-  Efficiently manage customer orders with real-time updates and status tracking.
-
-- 🪑 **Table Reservations**  
-  Simplify table bookings and manage reservations directly from the POS.
-
-- 🔐 **Authentication**  
-  Secure login and role-based access control for admins, staff, and users.
-
-- 💸 **Payment Integration**  
-  Integrated with **Razorpay** (or other gateways) for seamless online payments.
-
-- 🧾 **Billing & Invoicing**  
-  Automatically generate detailed bills and invoices for every order.
+A full-stack **Restaurant Point of Sale (POS) System** built with the **MERN Stack** to streamline restaurant operations, including table management, order processing, billing, and online payments.
 
 
-## 🏗️ **Tech Stack**
+## ✨ Features
 
-| **Category**             | **Technology**                |
-|--------------------------|-------------------------------|
-| 🖥️ **Frontend**          | React.js, Redux, Tailwind CSS  |
-| 🔙 **Backend**           | Node.js, Express.js           |
-| 🗄️ **Database**          | MongoDB                       |
-| 🔐 **Authentication**    | JWT, bcrypt                   |
-| 💳 **Payment Integration**| Razorpay    |
-| 📊 **State Management**   | Redux Toolkit                 |
-| ⚡ **Data Fetching & Caching** | React Query            |
-| 🔗 **APIs**              | RESTful APIs                   |
+- 🔐 **Authentication** – Secure registration and login using JWT and bcrypt.
+- 🪑 **Table Management** – Add tables, check availability, book tables, and automatically release tables after order completion.
+- 🍛 **Menu & Cart** – Browse dishes, add items to cart, manage quantities, and calculate bills.
+- 📋 **Order Management** – Create orders and track status from **In Progress → Ready → Completed**.
+- 🧾 **Billing & Invoice** – Automatic tax calculation, billing, and invoice generation.
+- 💵 **Cash Payment** – Support for cash payments.
+- 💳 **Razorpay Payment** – Online payment integration with Razorpay payment verification.
+- 🔔 **Razorpay Webhook** – Secure webhook signature verification and payment processing.
+- 📊 **Dashboard** – View metrics, recent orders, and payment history.
 
----
-<br>
 
-## 📺 **YouTube Playlist**
 
-🎬 Follow the complete tutorial series on building this Restaurant POS System on YouTube:  
-👉 [Watch the Playlist](https://www.youtube.com/playlist?list=PL9OdiypqS7Nk0DHnSNFIi8RgEFJCIWB6X)  
+## 🛠️ Tech Stack
 
-## 📁 **Assets**
+| Category | Technologies |
+|---|---|
+| Frontend | React.js, Vite |
+| Styling | Tailwind CSS |
+| State Management | Redux Toolkit |
+| Data Fetching | TanStack React Query |
+| Backend | Node.js, Express.js |
+| Database | MongoDB, Mongoose |
+| Authentication | JWT, bcrypt |
+| Payment Gateway | Razorpay |
+| API | REST APIs |
+| HTTP Client | Axios |
+| Notifications | Notistack |
+| Icons | React Icons |
 
-- 📦 **Project Assets:** [Google Drive](https://drive.google.com/drive/folders/193N-F1jpzyfPCRCLc9wCyaxjYu2K6PC_)
 
----
 
-## 📋 **Flow Chart for Project Structure**
+## 🖼️ Screenshots
 
-- 🗺️ **Visualize the Project Structure:** [View Flow Chart](https://app.eraser.io/workspace/IcU1b6EHu9ZyS9JKi0aY?origin=share)
-
----
-
-## 🎨 **Design Inspiration**
-
-- 💡 **UI/UX Design Reference:** [Behance Design](https://www.behance.net/gallery/210280099/Restaurant-POS-System-Point-of-Sale-UIUX-Design)
-
----
-
-## 🖼️ **Project Screenshots**
 
 <table>
   <tr>
-    <td><img src="https://res.cloudinary.com/amritrajmaurya/image/upload/v1740502772/ibjxvy5o1ikbsdebrjky.png" alt="Screenshot 1" width="300"/></td>
-    <td><img src="https://res.cloudinary.com/amritrajmaurya/image/upload/v1740502773/ietao6dnw6yjsh4f71zn.png" alt="Screenshot 2" width="300"/></td>
+    <td><img src="screenshots/Dashboard.png" width="400"/></td>
+    <td><img src="screenshots/Menu.png" width="400"/></td>
   </tr>
   <tr>
-    <td><img src="https://res.cloudinary.com/amritrajmaurya/image/upload/v1740502772/vesokdfpa1jb7ytm9abi.png" alt="Screenshot 3" width="300"/></td>
-    <td><img src="https://res.cloudinary.com/amritrajmaurya/image/upload/v1740502772/setoqzhzbwbp9udpri1f.png" alt="Screenshot 4" width="300"/></td>
-  </tr>
-  <tr>
-    <td><img src="https://res.cloudinary.com/amritrajmaurya/image/upload/v1740502772/fc4tiwzdoisqwac1j01y.png" alt="Screenshot 5" width="300"/></td>
+    <td><img src="screenshots/Orders.png" width="400"/></td>
+    <td><img src="screenshots/Home(2).png" width="400"/></td>
   </tr>
 </table>
 
 
-✨ Feel free to explore, contribute, and enhance the project! 🚀
+## 🔄 Application Flow
 
-💡 To contribute, please check out the **CONTRIBUTING.md** for guidelines.
+    Login / Register
+           ↓
+    Restaurant Tables
+           ↓
+    Select Available Table
+           ↓
+    Browse Menu
+           ↓
+    Add Items to Cart
+           ↓
+    Enter Customer Details
+           ↓
+    Select Payment Method
+           ↓
+    Create Order
+           ↓
+    Table → Booked
+           ↓
+    Order Status
+    In Progress → Ready → Completed
+           ↓
+    Table → Available
 
-⭐ If you find this project helpful, don't forget to **star** the repository! 🌟
+
+### Backend Setup
+
+cd pos-backend
+npm install
+npm run dev
+
+Backend runs on: http://localhost:8000
+
+### Frontend Setup
+
+Open another terminal:
+
+cd pos-frontend
+npm install
+npm run dev
+
+Frontend runs on: http://localhost:5173
+
+
+## 🏗️ Project Structure
+
+    Restaurant_POS_System/
+    │
+    ├── pos-backend/
+    │   ├── config/
+    │   ├── controllers/
+    │   ├── middlewares/
+    │   ├── models/
+    │   ├── routes/
+    │   ├── app.js
+    │   └── package.json
+    │
+    ├── pos-frontend/
+    │   ├── public/
+    │   ├── src/
+    │   │   ├── assets/
+    │   │   ├── components/
+    │   │   ├── hooks/
+    │   │   ├── https/
+    │   │   ├── pages/
+    │   │   ├── redux/
+    │   │   ├── constants/
+    │   │   └── utils/
+    │   ├── package.json
+    │   └── vite.config.js
+    │
+    └── README.md
+
+
+⭐ If you find this project useful, feel free to explore the repository.
