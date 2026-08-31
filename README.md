@@ -38,7 +38,6 @@ A full-stack **Restaurant Point of Sale (POS) System** built with the **MERN Sta
 
 ## 🖼️ Screenshots
 
-## 🖼️ Screenshots
 
 <table>
   <tr>
